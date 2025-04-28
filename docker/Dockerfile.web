@@ -12,4 +12,4 @@ RUN pnpm install
 
 WORKDIR /app/apps/web
 
-CMD ["pnpm", "dev"]
+CMD ["/bin/sh", "/app/apps/web/entrypoint.sh"]
