@@ -10,4 +10,6 @@ COPY . .
 
 WORKDIR /app/apps/web
 
-CMD ["/bin/sh", "/app/apps/web/entrypoint.sh"]
+RUN pnpm install
+
+CMD ["pnpm", "dev"]
